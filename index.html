@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Github issues</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            html{
+                font-size: 62.5%;
+            }
+
+            body{
+                font-family: sans-serif;
+            }
+
+            .title{
+                text-align: center;
+                font-size: 5rem;
+                color: dodgerblue;
+            }
+
+            .subtitle{
+                font-size: 3rem;
+                margin-top: 5rem;
+                text-align: center;
+                color: darkcyan;
+            }
+            .issues{
+                margin: 3rem auto;
+                display: flex;
+                width: 40%;
+                flex-direction: column;
+            }
+
+            .issue{
+                padding: 1rem;
+                font-size: 1.6rem;
+                line-height: 1.5;
+                letter-spacing: 1px;
+            }
+            
+            .container{
+                width: 60%;
+                margin: 5rem auto;
+            }
+            .btns{
+                text-align: center;
+            }
+            button:first-child{
+                margin-right: 2rem;
+            }
+            button{
+                padding: 0.8rem 2rem;
+                cursor: pointer;
+                border: none;
+                font-size: 1.6rem;
+                background-color: aqua;
+                transition: opacity 0.3s ease;
+            }
+
+            button:hover{
+                opacity: 0.5;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="title">Github Issues</h1>
+            <div class="issue-container">
+                <h2 class="subtitle">Page number <span>1</span></h2>
+                <ol class="issues">
+                    <li class="issue"></li>
+                    <li class="issue"></li>
+                    <li class="issue"></li>
+                    <li class="issue"></li>
+                    <li class="issue"></li>
+                </ol>
+            </div>
+            <div class="btns">
+                <button type="button" id="load_prev">Prev</button>
+                <button type="button" id="load_next">Next</button>
+            </div>
+        </div>
+        <script src="./script.js"></script>
+    </body>
+</html>
