@@ -1,4 +1,3 @@
-// import axios from 'axios';
 const issues = Array.from(document.querySelector('.issues').children);
 const btns = document.querySelector('.btns');
 
